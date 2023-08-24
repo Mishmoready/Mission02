@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./ImageURLAndImageUploader.css";
 
-const CarImageClassifier = () => {
+const ImageFromURL = () => {
   const [imageUrl, setImageUrl] = useState("");
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -29,7 +30,7 @@ const CarImageClassifier = () => {
   };
 
   return (
-    <div>
+    <div className="CarImageURL">
       <div>
         <input
           type="text"
@@ -57,4 +58,4 @@ const CarImageClassifier = () => {
   );
 };
 
-export default CarImageClassifier;
+export default ImageFromURL;

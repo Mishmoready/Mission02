@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./ImageURLAndImageUploader.css";
 
 function ImageUploader() {
   const [file, setFile] = useState(null);
@@ -38,7 +39,7 @@ function ImageUploader() {
   };
 
   return (
-    <div>
+    <div className="ImageUploader">
       <div>
         <input type="file" onChange={handleFileChange} />
         <button onClick={classifyByUpload}>Classify by Upload</button>
